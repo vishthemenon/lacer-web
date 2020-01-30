@@ -10,7 +10,7 @@ const WebpackMessages = require('webpack-messages');
 module.exports = merge(baseConfig, {
   mode: 'production',
   output: {
-    publicPath: '/',
+    publicPath: '/lacer-web',
   },
   module: {
     rules: [
