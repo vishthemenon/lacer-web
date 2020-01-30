@@ -60,3 +60,26 @@
 		vertical-align: middle;
 	}
 }
+
+#website {
+	.card-header {
+		background: #dde;
+		padding: .1rem;
+	}
+
+	.card {
+		&:first-child {
+			.card-header {
+				border-top-left-radius: 10px;
+				border-top-right-radius: 10px;
+			}
+		}
+
+		&:last-child {
+			.card-header {
+				border-bottom-left-radius: 10px;
+				border-bottom-right-radius: 10px;
+			}
+		}
+	}
+}

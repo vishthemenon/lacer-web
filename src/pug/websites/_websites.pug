@@ -1,0 +1,89 @@
+.row.row-grid.align-items-center.pb-5
+  .col-md-6.order-md-1
+    img.img-fluid.rounded.shadow-lg.transform-perspective-left(src='assets/img/webs.jpeg' alt='app mockup')
+  .col-md-6.order-md-2
+    .pr-md-5
+      h3 Website Development
+      p
+        | This website was created using modern web development best practices, frameworks and tools.
+      #accordion10.mt-5
+        .card
+          #headingOne.card-header
+            h5.mb-0
+              button.btn.btn-link.collapsed(data-toggle='collapse' data-target='#collapseOne' aria-expanded='false' aria-controls='collapseOne')
+                | <b>1 </b>Development Tools
+          #collapseOne.collapse(aria-labelledby='headingOne' data-parent='#accordion10')
+            .card-body
+              ul
+                li <code>Git </code> - Used for version control and triggering the continuous integration (CI) pipeline
+                li <code>VSCode </code> - IDE used to write the source code
+                li <code>Sketch & Photoshop </code> - Create graphic assets (ie. logo)
+        .card
+          #headingTwo.card-header
+            h5.mb-0
+              button.btn.btn-link.collapsed(data-toggle='collapse' data-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo')
+                | <b>2 </b>Frontend Development
+          #collapseTwo.collapse(aria-labelledby='headingTwo' data-parent='#accordion10')
+            .card-body
+              ul
+                li <code>Pug </code> - A high-performance template engine used to markup DOM elements 
+                li <code>Sass </code> - A superset of CSS to write expressive style markup
+                li <code>ES7/ES2017 </code> - Newest ECMAScript standard to leverage latest Javascript capabilities available on modern browsers
+                li <code>Babel </code> - To transpile ES7 code to JS and polyfill functions that not available on older browsers 
+                li <code>Webpack 4 </code> - Module bundler for transforming, bundling, or packaging the source code and assets to obtain the build files
+                li <code>Yarn </code> - Node package manager to install third-party node packages
+                li <code>Bootstrap 4 </code> - Frontend CSS framework for rapid prototyping and development of the UI
+        .card
+          #headingThree.card-header
+            h5.mb-0
+              button.btn.btn-link.collapsed(data-toggle='collapse' data-target='#collapseThree' aria-expanded='false' aria-controls='collapseThree')
+                | <b>3 </b>Continuous Integration/ Deployment (CICD)
+          #collapseThree.collapse(aria-labelledby='headingThree' data-parent='#accordion10')
+            .card-body
+              p.text-muted To keep with best practices, the final build files are not checked into the git repository. Instead, a CICD pipeline was set-up (using Github Actions) to automatically build from source files and deploy to Github Pages when each commit is pushed to Github. This way the source repository is not polluted with temporary build files and no additional effort/time is needed to deploy the website with each release or commit.
+        .card
+          #headingThree.card-header
+            h5.mb-0
+              button.btn.btn-link.collapsed(data-toggle='collapse' data-target='#collapseThree44' aria-expanded='false' aria-controls='collapseThree44')
+                | <b>4 </b>Code Quality
+          #collapseThree44.collapse(aria-labelledby='headingThree' data-parent='#accordion10')
+            .card-body
+              p.text-muted In order to maintain code quality, code linters were used. They look for syntax errors and inconsistencies in the code.
+              ul
+                li <code>StyleLint </code> - Linter for Sass/CSS files
+                li <code>ESLint </code> - Linter for JS files
+
+.row.row-grid.align-items-center.pb-5
+  .col-md-6.order-md-2
+    img.img-fluid.rounded.shadow-lg.transform-perspective-right(src='assets/img/domain.jpeg' alt='app mockup')
+  .col-md-6.order-md-1
+    .pr-md-5
+      h3 Domain Setup
+      p
+        | These are the series of steps needed to setup a custom domain
+      #accordion20.mt-5
+        .card
+          #headingOne.card-header
+            h5.mb-0
+              button.btn.btn-link.collapsed(data-toggle='collapse' data-target='#collapseOne' aria-expanded='false' aria-controls='collapseOne')
+                | <b>1 </b>Buy a domain from a registrar
+          #collapseOne.collapse(aria-labelledby='headingOne' data-parent='#accordion20')
+            .card-body
+              | Decide on an available domain name that is descriptive of the website, easy to remember. You will have the choice to register the domain on several different top-level domains if available such as <code> .com, .org, .biz, and .net </code>.
+              | Visit a domain name registrar such as <code>namecheap.com, Domain.com</code> and input the chosen domain name. Ensure that the chosen registrar is also GDPR compliant.
+        .card
+          #headingTwo.card-header
+            h5.mb-0
+              button.btn.btn-link.collapsed(data-toggle='collapse' data-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo')
+                | <b>2 </b>Configure the domain on Github
+          #collapseTwo.collapse(aria-labelledby='headingTwo' data-parent='#accordion20')
+            .card-body
+              | To set up a www or custom subdomain, such as <code>www.example.com</code> or <code>blog.example.com</code>, you must create a CNAME file in your site's repository with your custom domain in the root folder.
+        .card
+          #headingThree.card-header
+            h5.mb-0
+              button.btn.btn-link.collapsed(data-toggle='collapse' data-target='#collapseThree' aria-expanded='false' aria-controls='collapseThree')
+                | <b>3 </b>Configure the DNS settings
+          #collapseThree.collapse(aria-labelledby='headingThree' data-parent='#accordion20')
+            .card-body
+              | Navigate to your DNS provider and create a CNAME record that points your subdomain to the default domain for your site. For example, if you want to use the subdomain www.example.com for your user site, create a CNAME record that points <code>www.example.com</code> to <code>\<user\>.github.io</code>. For more information about how to create the correct record, see your DNS provider's documentation.        
