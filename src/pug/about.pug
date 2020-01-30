@@ -1,0 +1,88 @@
+doctype html
+include _head.pug
+  title About
+include _header.pug
+main
+  .position-relative
+    // shape Hero
+    section.section.section-lg.section-shaped.pb-100
+      .shape.shape-style-1.shape-dark
+        span
+        span
+        span
+        span
+        span
+        span
+        span
+        span
+        span
+      // SVG separator
+      .separator.separator-bottom.separator-skew
+        svg(x='0' y='0' viewbox='0 0 2560 100' preserveaspectratio='none' version='1.1' xmlns='http://www.w3.org/2000/svg')
+          polygon.fill-white(points='2560 0 2560 100 0 100')
+  section.section.section-lg#feature-2
+    .container
+      .row.row-grid.align-items-center
+        .col-md-6.order-md-2
+          img.img-fluid.floating(src='assets/img/proto-side.png' alt='wall of shoes')
+        .col-md-6.order-md-1
+          .pr-md-5
+            h3 About Lacer
+            p
+              | Lacer fits on most shoes easily so you are free to show of your style without compromising on convienience. 
+              | Its innovative design also enables you to remove it easily and use it with different pairs of shoes.
+            ul.list-unstyled.mt-5
+              li.py-2
+                .d-flex.align-items-center
+                  div
+                    .badge.badge-circle.badge-success.mr-3
+                      i.ni.ni-settings-gear-65
+                  div
+                    h6.mb-0 Light, compact and unnoticable 
+              li.py-2
+                .d-flex.align-items-center
+                  div
+                    .badge.badge-circle.badge-success.mr-3
+                      i.ni.ni-html5
+                  div
+                    h6.mb-0 Does not use adhesives or permenant stitching 
+              li.py-2
+                .d-flex.align-items-center
+                  div
+                    .badge.badge-circle.badge-success.mr-3
+                      i.ni.ni-satisfied
+                  div
+                    h6.mb-0 Can be removed and replaced easily
+  section.section.section-lg#feature-3
+    .container
+      .row.row-grid.align-items-center
+        .col-md-6.order-md-1
+          img.img-fluid.floating(src='assets/img/sketch.jpg' alt='app mockup')
+        .col-md-6.order-md-2
+          .pr-md-5
+            h3 Go handsfree
+            p
+              | Lacer comes with a smart, companion app that will learn from your walking habits and adjust itself to balance comfort and stability throughout the day.
+              | (Coming Soon)
+            ul.list-unstyled.mt-5
+              li.py-2
+                .d-flex.align-items-center
+                  div
+                    .badge.badge-circle.badge-success.mr-3
+                      i.ni.ni-settings-gear-65
+                  div
+                    h6.mb-0 Light, compact and unnoticable 
+              li.py-2
+                .d-flex.align-items-center
+                  div
+                    .badge.badge-circle.badge-success.mr-3
+                      i.ni.ni-html5
+                  div
+                    h6.mb-0 Does not use adhesives or permenant stitching 
+              li.py-2
+                .d-flex.align-items-center
+                  div
+                    .badge.badge-circle.badge-success.mr-3
+                      i.ni.ni-satisfied
+                  div
+                    h6.mb-0 Can be removed and replaced easily
