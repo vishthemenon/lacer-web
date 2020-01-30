@@ -1,9 +1,6 @@
-# Ukyo
+# Lacer Marketing Site
 
-Ukyo is a frontend boilerplate that uses Webpack 4.
-
-![Ukyo](https://preview.ibb.co/mDpt1e/ukyo_tools.jpg)
-
+Built with
 - [x] Webpack 4
 - [x] Babel 7
 - [x] JS Hot module replacement
