@@ -1,0 +1,48 @@
+doctype html
+include _head.pug
+  title Our Story
+include _header.pug
+main
+  .position-relative
+    // shape Hero
+    section.section.section-lg.section-shaped.pb-100
+      .shape.shape-style-1.shape-dark
+        span
+        span
+        span
+        span
+        span
+        span
+        span
+        span
+        span
+      // SVG separator
+      .separator.separator-bottom.separator-skew
+        svg(x='0' y='0' viewbox='0 0 2560 100' preserveaspectratio='none' version='1.1' xmlns='http://www.w3.org/2000/svg')
+          polygon.fill-white(points='2560 0 2560 100 0 100')
+  section.section.section-lg#feature-2
+    .container
+      .row.row-grid.align-items-center
+        .col-md-6.order-md-2
+          img.img-fluid.rounded.shadow-lg.transform-perspective-right(src='assets/img/ppl.jpeg' alt='app mockup')
+        .col-md-6.order-md-1
+          .pr-md-5
+            h3 Background
+            p
+              | Over 30 million people suffer from multiple sclerosis, cerebral palsy, muscular dystrophy or Parkinson's disease worldwide. These diseases, along with many other conditions, often result in reduced fine motor control. Whilst solutions exist to help with many of the big problems that such conditions can bring, there are few products out there to assist with minor every-day tasks, like tying your shoelaces. For many younger patients, it can be frustrating to have to wear special footwear and feel different from their peers.
+            p
+              | Many groups of people experience difficulties bending down, whether it's because of preganency or back injuries or many other causes. 80% of people in UK and US experience back pain at some stage in their lives. This is a large proportion of population who are also unable to tie laces.
+  section.section.section-lg#feature-3
+    .container
+      .row.row-grid.align-items-center
+        .col-md-6.order-md-1
+          img.img-fluid.rounded.shadow-lg.transform-perspective-left(src='assets/img/imp.jpeg' alt='wall of shoes')
+        .col-md-6.order-md-2
+          .pr-md-5
+            h3 Inspiration
+            p
+              | Lacer was founded by a team of engineering students at Imperial College London with the goal of making a little bit easier for those we can help (i.e. people with with lower back pain or disorders affecting motor function). Solutions like Velcro or slip-on shoes mean that you can't just wear whatever shoes you want. This may sound insignificant but for children and teenagers who just want to fit in with their friends, it can be a big deal! And because we care about the little things, it's a big deal to us as well!
+            p
+              | Our product will enable you to tie your laces with minimal need for fine motor control or bending down.
+            
+include _footer.pug
