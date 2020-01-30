@@ -46,7 +46,7 @@ module.exports = merge(baseConfig, {
   ],
   devtool: 'eval-source-map',
   devServer: {
-    compress: true,
+    compress: false,
     quiet: true,
     stats: {
       assets: false,

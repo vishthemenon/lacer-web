@@ -1,6 +1,6 @@
 doctype html
 include _head.pug
-  title Our Story
+  title Website
 include _header.pug
 main
   .position-relative
@@ -23,16 +23,196 @@ main
   section.section.section-lg
     .container
       .row.row-grid.align-items-center
-        h1 Additional Information
-      .row.row-grid.align-items-center
+        .col-12
+          h1.text-center Additional Information
+      .row.row-grid.align-items-center.pb-5
         .col-md-6.order-md-2
           img.img-fluid.rounded.shadow-lg.transform-perspective-right(src='assets/img/ppl.jpeg' alt='app mockup')
         .col-md-6.order-md-1
           .pr-md-5
-            h3 Background
+            h3 What makes a good website?
             p
-              | Over 30 million people suffer from multiple sclerosis, cerebral palsy, muscular dystrophy or Parkinson's disease worldwide. These diseases, along with many other conditions, often result in reduced fine motor control. Whilst solutions exist to help with many of the big problems that such conditions can bring, there are few products out there to assist with minor every-day tasks, like tying your shoelaces. For many younger patients, it can be frustrating to have to wear special footwear and feel different from their peers.
-            p
-              | Many groups of people experience difficulties bending down, whether it's because of preganency or back injuries or many other causes. 80% of people in UK and US experience back pain at some stage in their lives. This is a large proportion of population who are also unable to tie laces.
+              | The website of a company is very important as it is often the face of the company and plays a key part int he branding, marketing and sales strategy of the company. Hence, good website principles must be followed for the success of the company.
+            #accordion1.mt-5
+              .card
+                #headingOne.card-header
+                  h5.mb-0
+                    button.btn.btn-link(data-toggle='collapse' data-target='#collapseOne' aria-expanded='true' aria-controls='collapseOne')
+                      | <b>1 </b>Don't Make Users Think
+                #collapseOne.collapse.show(aria-labelledby='headingOne' data-parent='#accordion1')
+                  .card-body
+                    | According to Krug’s first law of usability, the web-page should be obvious and self-explanatory. When you’re creating a site, your job is to get rid of the question marks — the decisions users need to make consciously, considering pros, cons and alternatives.
 
+                    | If the navigation and site architecture aren’t intuitive, the number of question marks grows and makes it harder for users to comprehend how the system works and how to get from point A to point B. A clear structure, moderate visual clues and easily recognizable links can help users to find their path to their aim.
+              .card
+                #headingTwo.card-header
+                  h5.mb-0
+                    button.btn.btn-link.collapsed(data-toggle='collapse' data-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo')
+                      | <b>2 </b>Strive For simplicity
+                #collapseTwo.collapse(aria-labelledby='headingTwo' data-parent='#accordion1')
+                  .card-body
+                    | The “keep it simple”-principle (KIS) should be the primary goal of site design. Users are rarely on a site to enjoy the design; furthermore, in most cases they are looking for the information despite the design. Strive for simplicity instead of complexity.
+                    | From the visitors’ point of view, the best site design is a pure text, without any advertisements or further content blocks matching exactly the query visitors used or the content they’ve been looking for. This is one of the reasons why a user-friendly print-version of web pages is essential for good user experience.
+              .card
+                #headingThree.card-header
+                  h5.mb-0
+                    button.btn.btn-link.collapsed(data-toggle='collapse' data-target='#collapseThree' aria-expanded='false' aria-controls='collapseThree')
+                      | <b>3 </b>Use negative space better
+                #collapseThree.collapse(aria-labelledby='headingThree' data-parent='#accordion1')
+                  .card-body
+                    | Not only does it help to reduce the cognitive load for the visitors, but it makes it possible to perceive the information presented on the screen. When a new visitor approaches a design layout, the first thing he/she tries to do is to scan the page and divide the content area into digestible pieces of information.
+              .card
+                #headingThree.card-header
+                  h5.mb-0
+                    button.btn.btn-link.collapsed(data-toggle='collapse' data-target='#collapseFopur' aria-expanded='false' aria-controls='collapseFopur')
+                      | <b>4 </b>Incorporate responsive web design
+                #collapseFopur.collapse(aria-labelledby='headingThree' data-parent='#accordion1')
+                  .card-body
+                    | A website with responsive web design is a site that is able to adapt the screen it is being used on, regardless of what device it is.
+                    | Companies need websites that work well on a smartphone or other mobile device screens, due to the sheer amount of people who could be using the websites through smartphones or tablets. Furthermore, Google began using mobile friendliness as a ranking signal in search results so mobile-friendly sites get a boost in serach index ranking.
+
+      .row.row-grid.align-items-center.pb-5
+        .col-md-6.order-md-1
+          img.img-fluid.rounded.shadow-lg.transform-perspective-left(src='assets/img/ppl.jpeg' alt='app mockup')
+        .col-md-6.order-md-2
+          .pr-md-5
+            h3 What is accessibility and what considerations you should make for it?
+            p
+              | Websites should be made inclusive and as accessible as possible to people who are disabled. Websites should be developed to accomodate for assitive technologies such as screen readers that vocalise the text on each web page.
+              | If you aim for the most universally accepted technical requirements for web accessibility, the Web Content Accessibility Guidelines (WCAG) 2.0, Level AA, you can be sure you’re providing the best, most barrier-free experience possible to the disability community.
+              | These considerations include
+              ol
+                li Using screen reader (sr) tags
+                li Writing semantic HTML5
+                li Using Accessible Rich Internet Applications (ARIA) tags to inform assistive technologies
+                li Selecting smart colour coding for the visually impaired or the colour blind.
+    
+      .row.row-grid.align-items-center.pb-5
+        .col-md-6.order-md-2
+          img.img-fluid.rounded.shadow-lg.transform-perspective-right(src='assets/img/ppl.jpeg' alt='app mockup')
+        .col-md-6.order-md-1
+          .pr-md-5
+            h3 What makes a good website?
+            p
+              | GDPR aims to protect privacy and regulates what can be done with data collected. GDPR refers to laws which help protect the website owners from privacy and data breaches. It seeks to ensure responsibility and consent. In the context of GDPR, cookies must be considered as a form of a consent. It is necessary for everyone in a team to be GDPR aware, and an information audit should be carried out with the objective of ensuring GDPR compliancy.
+            button.btn.btn-primary(type='button' data-toggle='modal' data-target='#GDPRModal')
+              | View GDPR Guidelines
+            // Modal
+            #GDPRModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='GDPRModalLabel' aria-hidden='true')
+              .modal-dialog.modal-dialog-centered(role='document')
+                .modal-content
+                  .modal-header
+                    h5#GDPRModalLabel.modal-title GDPR Guidelines
+                    button.close(type='button' data-dismiss='modal' aria-label='Close')
+                      span(aria-hidden='true') &times;
+                  .modal-body
+                    #accordion2.mt-5
+                      .card
+                        #headingOne.card-header
+                          h5.mb-0
+                            button.btn.btn-link(data-toggle='collapse' data-target='#collapseOne' aria-expanded='true' aria-controls='collapseOne')
+                              | <b>1 </b>Cookie notifications
+                        #collapseOne.collapse.show(aria-labelledby='headingOne' data-parent='#accordion2')
+                          .card-body
+                            | This makes the user aware that in order to view the website they must consent for the website to store or retrieve any information on a computer, smartphone or tablet. The user must agree with the terms and conditions and privacy policies. Implied consent is no longer allowed (you must click to opt-in). Moreover, the option must be unbundled meaning that each individual box must only have a single statement of agreement. There must be an easy way for a user to opt out and withdraw consent.
+                      .card
+                        #headingTwo.card-header
+                          h5.mb-0
+                            button.btn.btn-link.collapsed(data-toggle='collapse' data-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo')
+                              | <b>2 </b>Cookie policy
+                        #collapseTwo.collapse(aria-labelledby='headingTwo' data-parent='#accordion2')
+                          .card-body
+                            | This should tell the users what data is being collected and for what purpose. It must also mention if any third-party members can also access their data and what their intentions are with it. This should either involve a link to the third-party policies or require the relevant information to be moved to the website itself.
+                      .card
+                        #headingThree.card-header
+                          h5.mb-0
+                            button.btn.btn-link.collapsed(data-toggle='collapse' data-target='#collapseThree' aria-expanded='false' aria-controls='collapseThree')
+                              | <b>3 </b>Privacy policy
+                        #collapseThree.collapse(aria-labelledby='headingThree' data-parent='#accordion2')
+                          .card-body
+                            | This expands on the cookie policy by stating how the data is collected and stored. The data stored must be accessible to the user and, hence, there should be a way of contacting the owner to consult on what data of theirs has been stored. Additionally, users must be able to request that their own stored data be deleted from the servers.
+                      .card
+                        #headingThree.card-header
+                          h5.mb-0
+                            button.btn.btn-link.collapsed(data-toggle='collapse' data-target='#collapse4' aria-expanded='false' aria-controls='collapse4')
+                              | <b>4 </b>Lead Captures
+                        #collapse4.collapse(aria-labelledby='headingThree' data-parent='#accordion2')
+                          .card-body
+                            | There may be no pre-ticked boxes in forms and users must consent to receiving email advertisements.
+                      .card
+                        #headingThree.card-header
+                          h5.mb-0
+                            button.btn.btn-link.collapsed(data-toggle='collapse' data-target='#collapse5' aria-expanded='false' aria-controls='collapse5')
+                              | <b>5 </b>Payments
+                        #collapse5.collapse(aria-labelledby='headingThree' data-parent='#accordion2')
+                          .card-body
+                            | It must be ensured that payment gateways for financial transactions are GDPR compliant and their privacy policy should be accessible from the website. In addition, if the website is required to store the data before passing it onto the gateways then it must be removed after a reasonable period of time as this is personal information.
+                      .card
+                        #headingThree.card-header
+                          h5.mb-0
+                            button.btn.btn-link.collapsed(data-toggle='collapse' data-target='#collapse6' aria-expanded='false' aria-controls='collapse6')
+                              | <b>6 </b>Payments
+                        #collapse6.collapse(aria-labelledby='headingThree' data-parent='#accordion2')
+                          .card-body
+                            | This is where third-party marketing automation software solutions are used in the website. One must ensure that these parties are also GDPR approved and do not store and use data in ways which have not been consented to. Users must be able to access this information in the privacy policy.
+                      .card
+                        #headingThree.card-header
+                          h5.mb-0
+                            button.btn.btn-link.collapsed(data-toggle='collapse' data-target='#collapse7' aria-expanded='false' aria-controls='collapse7')
+                              | <b>7 </b>International Data Supervisory
+                        #collapse7.collapse(aria-labelledby='headingThree' data-parent='#accordion2')
+                          .card-body
+                            | If the product is traded internationally it will be necessary to determine the lead data protection supervisory authority.
+                  .modal-footer
+                    button.btn.btn-danger(type='button' data-dismiss='modal') Close
+
+      .row.row-grid.align-items-center.pb-5
+        .col-md-6.order-md-1
+          img.img-fluid.rounded.shadow-lg.transform-perspective-left(src='assets/img/ppl.jpeg' alt='app mockup')
+        .col-md-6.order-md-2
+          .pr-md-5
+            h3 What marketing steps would you take to drive people to look at your website?
+            p
+              | A number of marketing strategies can be employed to drive traffic towards the website and make the product popular. I
+              #accordion4.mt-5
+                .card
+                  #headingOne.card-header
+                    h5.mb-0
+                      button.btn.btn-link(data-toggle='collapse' data-target='#collapseOne' aria-expanded='true' aria-controls='collapseOne')
+                        | <b>1 </b>Influencer Marketing
+                  #collapseOne.collapse.show(aria-labelledby='headingOne' data-parent='#accordion4')
+                    .card-body
+                      | Bloggers and social media influencers can be reached out to with an already large audience base to promote the product and include a link to the website on their personal blogs/vlogs.
+                .card
+                  #headingTwo.card-header
+                    h5.mb-0
+                      button.btn.btn-link.collapsed(data-toggle='collapse' data-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo')
+                        | <b>2 </b>Offline to Online Marketing
+                  #collapseTwo.collapse(aria-labelledby='headingTwo' data-parent='#accordion4')
+                    .card-body
+                      | Since our product is aimed at people with back problems, posters including a QR code directing to the website can be put up in places such as hospital boards. 
+                .card
+                  #headingThree.card-header
+                    h5.mb-0
+                      button.btn.btn-link.collapsed(data-toggle='collapse' data-target='#collapseThree' aria-expanded='false' aria-controls='collapseThree')
+                        | <b>3 </b>Search Engine Optimisation
+                  #collapseThree.collapse(aria-labelledby='headingThree' data-parent='#accordion4')
+                    .card-body
+                      | Search Engine Optimisation strategies can be used, such as content optimization and creating backlinks from other websites, to make our website appear higher up on Google and other searches.
+                .card
+                  #headingThree.card-header
+                    h5.mb-0
+                      button.btn.btn-link.collapsed(data-toggle='collapse' data-target='#collapseFour' aria-expanded='false' aria-controls='collapseFour')
+                        | <b>4 </b>Social Media Marketing
+                  #collapseFour.collapse(aria-labelledby='headingThree' data-parent='#accordion4')
+                    .card-body
+                      | Social media should be used as well to market and promote the product, including establishing a Twitter and Facebook page.
+                .card
+                  #headingThree.card-header
+                    h5.mb-0
+                      button.btn.btn-link.collapsed(data-toggle='collapse' data-target='#collapseFive' aria-expanded='false' aria-controls='collapseFive')
+                        | <b>5 </b>Content Marketing (Drip Marketing)
+                  #collapseFive.collapse(aria-labelledby='headingThree' data-parent='#accordion4')
+                    .card-body
+                      | Creating useful content in the form of newsletters, blog posts and podcasts can help drive interested, potential users to the site. These customers may subsequently convert over time.
 include _footer.pug
