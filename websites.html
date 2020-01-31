@@ -46,7 +46,7 @@
     </div>
   </nav>
 </header>
-<main>
+<main id="website">
   <div class="position-relative">
     <!-- shape Hero-->
     <section class="section section-lg section-shaped pb-100">
@@ -63,245 +63,375 @@
     <div class="container">
       <div class="row row-grid align-items-center">
         <div class="col-12">
-          <h1 class="text-center">Additional Information</h1>
-        </div>
-      </div>
-      <div class="row row-grid align-items-center pb-5">
-        <div class="col-md-6 order-md-2"><img class="img-fluid rounded shadow-lg transform-perspective-right" src="assets/img/ppl.jpeg" alt="app mockup"></div>
-        <div class="col-md-6 order-md-1">
-          <div class="pr-md-5">
-            <h3>What makes a good website?</h3>
-            <p>The website of a company is very important as it is often the face of the company and plays a key part int he branding, marketing and sales strategy of the company. Hence, good website principles must be followed for the success of the company.</p>
-            <div class="mt-5" id="accordion1">
-              <div class="card">
-                <div class="card-header" id="headingOne">
-                  <h5 class="mb-0">
-                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><b>1 </b>Don't Make Users Think</button>
-                  </h5>
-                </div>
-                <div class="collapse show" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordion1">
-                  <div class="card-body">
-                    According to Krug’s first law of usability, the web-page should be obvious and self-explanatory. When you’re creating a site, your job is to get rid of the question marks — the decisions users need to make consciously, considering pros, cons and alternatives.
-                    If the navigation and site architecture aren’t intuitive, the number of question marks grows and makes it harder for users to comprehend how the system works and how to get from point A to point B. A clear structure, moderate visual clues and easily recognizable links can help users to find their path to their aim.
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="headingTwo">
-                  <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><b>2 </b>Strive For simplicity</button>
-                  </h5>
-                </div>
-                <div class="collapse" id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordion1">
-                  <div class="card-body">
-                    The “keep it simple”-principle (KIS) should be the primary goal of site design. Users are rarely on a site to enjoy the design; furthermore, in most cases they are looking for the information despite the design. Strive for simplicity instead of complexity.
-                    From the visitors’ point of view, the best site design is a pure text, without any advertisements or further content blocks matching exactly the query visitors used or the content they’ve been looking for. This is one of the reasons why a user-friendly print-version of web pages is essential for good user experience.
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="headingThree">
-                  <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><b>3 </b>Use negative space better</button>
-                  </h5>
-                </div>
-                <div class="collapse" id="collapseThree" aria-labelledby="headingThree" data-parent="#accordion1">
-                  <div class="card-body">Not only does it help to reduce the cognitive load for the visitors, but it makes it possible to perceive the information presented on the screen. When a new visitor approaches a design layout, the first thing he/she tries to do is to scan the page and divide the content area into digestible pieces of information.</div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="headingThree">
-                  <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFopur" aria-expanded="false" aria-controls="collapseFopur"><b>4 </b>Incorporate responsive web design</button>
-                  </h5>
-                </div>
-                <div class="collapse" id="collapseFopur" aria-labelledby="headingThree" data-parent="#accordion1">
-                  <div class="card-body">
-                    A website with responsive web design is a site that is able to adapt the screen it is being used on, regardless of what device it is.
-                    Companies need websites that work well on a smartphone or other mobile device screens, due to the sheer amount of people who could be using the websites through smartphones or tablets. Furthermore, Google began using mobile friendliness as a ranking signal in search results so mobile-friendly sites get a boost in serach index ranking.
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="nav-wrapper mb-5 pb-4">
+            <ul class="nav nav-pills nav-fill flex-column flex-md-row" id="tabs-icons-text" role="tablist">
+              <li class="nav-item"><a class="nav-link active" id="tabs-icons-text-1-tab" data-toggle="tab" href="#tabs-icons-text-1" role="tab" aria-controls="tabs-icons-text-1" aria-selected="true">Website</a></li>
+              <li class="nav-item"><a class="nav-link" id="tabs-icons-text-2-tab" data-toggle="tab" href="#tabs-icons-text-2" role="tab" aria-controls="tabs-icons-text-2" aria-selected="false">Additional Info</a></li>
+            </ul>
           </div>
-        </div>
-      </div>
-      <div class="row row-grid align-items-center pb-5">
-        <div class="col-md-6 order-md-1"><img class="img-fluid rounded shadow-lg transform-perspective-left" src="assets/img/ppl.jpeg" alt="app mockup"></div>
-        <div class="col-md-6 order-md-2">
-          <div class="pr-md-5">
-            <h3>What is accessibility and what considerations you should make for it?</h3>
-            <p>
-              Websites should be made inclusive and as accessible as possible to people who are disabled. Websites should be developed to accomodate for assitive technologies such as screen readers that vocalise the text on each web page.
-              If you aim for the most universally accepted technical requirements for web accessibility, the Web Content Accessibility Guidelines (WCAG) 2.0, Level AA, you can be sure you’re providing the best, most barrier-free experience possible to the disability community.
-              These considerations include
-              <ol>
-                <li>Using screen reader (sr) tags</li>
-                <li>Writing semantic HTML5</li>
-                <li>Using Accessible Rich Internet Applications (ARIA) tags to inform assistive technologies</li>
-                <li>Selecting smart colour coding for the visually impaired or the colour blind.</li>
-              </ol>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="row row-grid align-items-center pb-5">
-        <div class="col-md-6 order-md-2"><img class="img-fluid rounded shadow-lg transform-perspective-right" src="assets/img/ppl.jpeg" alt="app mockup"></div>
-        <div class="col-md-6 order-md-1">
-          <div class="pr-md-5">
-            <h3>What makes a good website?</h3>
-            <p>GDPR aims to protect privacy and regulates what can be done with data collected. GDPR refers to laws which help protect the website owners from privacy and data breaches. It seeks to ensure responsibility and consent. In the context of GDPR, cookies must be considered as a form of a consent. It is necessary for everyone in a team to be GDPR aware, and an information audit should be carried out with the objective of ensuring GDPR compliancy.</p>
-            <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#GDPRModal">View GDPR Guidelines</button>
-            <!-- Modal-->
-            <div class="modal fade" id="GDPRModal" tabindex="-1" role="dialog" aria-labelledby="GDPRModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="GDPRModalLabel">GDPR Guidelines</h5>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  </div>
-                  <div class="modal-body">
-                    <div class="mt-5" id="accordion2">
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="tabs-icons-text-1" role="tabpanel" aria-labelledby="tabs-icons-text-1-tab">
+              <div class="row row-grid align-items-center pb-5">
+                <div class="col-md-6 order-md-1"><img class="img-fluid rounded shadow-lg transform-perspective-left" src="assets/img/webs.jpeg" alt="app mockup"></div>
+                <div class="col-md-6 order-md-2">
+                  <div class="pr-md-5">
+                    <h3>Website Development</h3>
+                    <p>This website was created using modern web development best practices, frameworks and tools.</p>
+                    <div class="mt-5" id="accordion10">
                       <div class="card">
                         <div class="card-header" id="headingOne">
                           <h5 class="mb-0">
-                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><b>1 </b>Cookie notifications</button>
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"><b>1 </b>Development Tools</button>
                           </h5>
                         </div>
-                        <div class="collapse show" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordion2">
-                          <div class="card-body">This makes the user aware that in order to view the website they must consent for the website to store or retrieve any information on a computer, smartphone or tablet. The user must agree with the terms and conditions and privacy policies. Implied consent is no longer allowed (you must click to opt-in). Moreover, the option must be unbundled meaning that each individual box must only have a single statement of agreement. There must be an easy way for a user to opt out and withdraw consent.</div>
+                        <div class="collapse" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordion10">
+                          <div class="card-body">
+                            <ul>
+                              <li><code>Git </code> - Used for version control and triggering the continuous integration (CI) pipeline</li>
+                              <li><code>VSCode </code> - IDE used to write the source code</li>
+                              <li><code>Sketch & Photoshop </code> - Create graphic assets (ie. logo)</li>
+                            </ul>
+                          </div>
                         </div>
                       </div>
                       <div class="card">
                         <div class="card-header" id="headingTwo">
                           <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><b>2 </b>Cookie policy</button>
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><b>2 </b>Frontend Development</button>
                           </h5>
                         </div>
-                        <div class="collapse" id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordion2">
-                          <div class="card-body">This should tell the users what data is being collected and for what purpose. It must also mention if any third-party members can also access their data and what their intentions are with it. This should either involve a link to the third-party policies or require the relevant information to be moved to the website itself.</div>
+                        <div class="collapse" id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordion10">
+                          <div class="card-body">
+                            <ul>
+                              <li><code>Pug </code> - A high-performance template engine used to markup DOM elements </li>
+                              <li><code>Sass </code> - A superset of CSS to write expressive style markup</li>
+                              <li><code>ES7/ES2017 </code> - Newest ECMAScript standard to leverage latest Javascript capabilities available on modern browsers</li>
+                              <li><code>Babel </code> - To transpile ES7 code to JS and polyfill functions that not available on older browsers </li>
+                              <li><code>Webpack 4 </code> - Module bundler for transforming, bundling, or packaging the source code and assets to obtain the build files</li>
+                              <li><code>Yarn </code> - Node package manager to install third-party node packages</li>
+                              <li><code>Bootstrap 4 </code> - Frontend CSS framework for rapid prototyping and development of the UI</li>
+                            </ul>
+                          </div>
                         </div>
                       </div>
                       <div class="card">
                         <div class="card-header" id="headingThree">
                           <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><b>3 </b>Privacy policy</button>
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><b>3 </b>Continuous Integration/ Deployment (CICD)</button>
                           </h5>
                         </div>
-                        <div class="collapse" id="collapseThree" aria-labelledby="headingThree" data-parent="#accordion2">
-                          <div class="card-body">This expands on the cookie policy by stating how the data is collected and stored. The data stored must be accessible to the user and, hence, there should be a way of contacting the owner to consult on what data of theirs has been stored. Additionally, users must be able to request that their own stored data be deleted from the servers.</div>
+                        <div class="collapse" id="collapseThree" aria-labelledby="headingThree" data-parent="#accordion10">
+                          <div class="card-body">
+                            <p class="text-muted">To keep with best practices, the final build files are not checked into the git repository. Instead, a CICD pipeline was set-up (using Github Actions) to automatically build from source files and deploy to Github Pages when each commit is pushed to Github. This way the source repository is not polluted with temporary build files and no additional effort/time is needed to deploy the website with each release or commit.</p>
+                          </div>
                         </div>
                       </div>
                       <div class="card">
                         <div class="card-header" id="headingThree">
                           <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4"><b>4 </b>Lead Captures</button>
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree44" aria-expanded="false" aria-controls="collapseThree44"><b>4 </b>Code Quality</button>
                           </h5>
                         </div>
-                        <div class="collapse" id="collapse4" aria-labelledby="headingThree" data-parent="#accordion2">
-                          <div class="card-body">There may be no pre-ticked boxes in forms and users must consent to receiving email advertisements.</div>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div class="card-header" id="headingThree">
-                          <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5"><b>5 </b>Payments</button>
-                          </h5>
-                        </div>
-                        <div class="collapse" id="collapse5" aria-labelledby="headingThree" data-parent="#accordion2">
-                          <div class="card-body">It must be ensured that payment gateways for financial transactions are GDPR compliant and their privacy policy should be accessible from the website. In addition, if the website is required to store the data before passing it onto the gateways then it must be removed after a reasonable period of time as this is personal information.</div>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div class="card-header" id="headingThree">
-                          <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6"><b>6 </b>Payments</button>
-                          </h5>
-                        </div>
-                        <div class="collapse" id="collapse6" aria-labelledby="headingThree" data-parent="#accordion2">
-                          <div class="card-body">This is where third-party marketing automation software solutions are used in the website. One must ensure that these parties are also GDPR approved and do not store and use data in ways which have not been consented to. Users must be able to access this information in the privacy policy.</div>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div class="card-header" id="headingThree">
-                          <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7"><b>7 </b>International Data Supervisory</button>
-                          </h5>
-                        </div>
-                        <div class="collapse" id="collapse7" aria-labelledby="headingThree" data-parent="#accordion2">
-                          <div class="card-body">If the product is traded internationally it will be necessary to determine the lead data protection supervisory authority.</div>
+                        <div class="collapse" id="collapseThree44" aria-labelledby="headingThree" data-parent="#accordion10">
+                          <div class="card-body">
+                            <p class="text-muted">In order to maintain code quality, code linters were used. They look for syntax errors and inconsistencies in the code.</p>
+                            <ul>
+                              <li><code>StyleLint </code> - Linter for Sass/CSS files</li>
+                              <li><code>ESLint </code> - Linter for JS files</li>
+                            </ul>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="modal-footer">
-                    <button class="btn btn-danger" type="button" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+              <div class="row row-grid align-items-center pb-5">
+                <div class="col-md-6 order-md-2"><img class="img-fluid rounded shadow-lg transform-perspective-right" src="assets/img/domain.jpeg" alt="app mockup"></div>
+                <div class="col-md-6 order-md-1">
+                  <div class="pr-md-5">
+                    <h3>Domain Setup</h3>
+                    <p>These are the series of steps needed to setup a custom domain</p>
+                    <div class="mt-5" id="accordion20">
+                      <div class="card">
+                        <div class="card-header" id="headingOne">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"><b>1 </b>Buy a domain from a registrar</button>
+                          </h5>
+                        </div>
+                        <div class="collapse" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordion20">
+                          <div class="card-body">
+                            Decide on an available domain name that is descriptive of the website, easy to remember. You will have the choice to register the domain on several different top-level domains if available such as <code> .com, .org, .biz, and .net </code>.
+                            Visit a domain name registrar such as <code>namecheap.com, Domain.com</code> and input the chosen domain name. Ensure that the chosen registrar is also GDPR compliant.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="headingTwo">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><b>2 </b>Configure the domain on Github</button>
+                          </h5>
+                        </div>
+                        <div class="collapse" id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordion20">
+                          <div class="card-body">To set up a www or custom subdomain, such as <code>www.example.com</code> or <code>blog.example.com</code>, you must create a CNAME file in your site's repository with your custom domain in the root folder.</div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="headingThree">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><b>3 </b>Configure the DNS settings</button>
+                          </h5>
+                        </div>
+                        <div class="collapse" id="collapseThree" aria-labelledby="headingThree" data-parent="#accordion20">
+                          <div class="card-body">Navigate to your DNS provider and create a CNAME record that points your subdomain to the default domain for your site. For example, if you want to use the subdomain www.example.com for your user site, create a CNAME record that points <code>www.example.com</code> to <code>\<user\>.github.io</code>. For more information about how to create the correct record, see your DNS provider's documentation.        </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="row row-grid align-items-center pb-5">
-        <div class="col-md-6 order-md-1"><img class="img-fluid rounded shadow-lg transform-perspective-left" src="assets/img/ppl.jpeg" alt="app mockup"></div>
-        <div class="col-md-6 order-md-2">
-          <div class="pr-md-5">
-            <h3>What marketing steps would you take to drive people to look at your website?</h3>
-            <p>A number of marketing strategies can be employed to drive traffic towards the website and make the product popular. I
-              <div class="mt-5" id="accordion4">
-                <div class="card">
-                  <div class="card-header" id="headingOne">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><b>1 </b>Influencer Marketing</button>
-                    </h5>
-                  </div>
-                  <div class="collapse show" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordion4">
-                    <div class="card-body">Bloggers and social media influencers can be reached out to with an already large audience base to promote the product and include a link to the website on their personal blogs/vlogs.</div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header" id="headingTwo">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><b>2 </b>Offline to Online Marketing</button>
-                    </h5>
-                  </div>
-                  <div class="collapse" id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordion4">
-                    <div class="card-body">Since our product is aimed at people with back problems, posters including a QR code directing to the website can be put up in places such as hospital boards. </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header" id="headingThree">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><b>3 </b>Search Engine Optimisation</button>
-                    </h5>
-                  </div>
-                  <div class="collapse" id="collapseThree" aria-labelledby="headingThree" data-parent="#accordion4">
-                    <div class="card-body">Search Engine Optimisation strategies can be used, such as content optimization and creating backlinks from other websites, to make our website appear higher up on Google and other searches.</div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header" id="headingThree">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><b>4 </b>Social Media Marketing</button>
-                    </h5>
-                  </div>
-                  <div class="collapse" id="collapseFour" aria-labelledby="headingThree" data-parent="#accordion4">
-                    <div class="card-body">Social media should be used as well to market and promote the product, including establishing a Twitter and Facebook page.</div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header" id="headingThree">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive"><b>5 </b>Content Marketing (Drip Marketing)</button>
-                    </h5>
-                  </div>
-                  <div class="collapse" id="collapseFive" aria-labelledby="headingThree" data-parent="#accordion4">
-                    <div class="card-body">Creating useful content in the form of newsletters, blog posts and podcasts can help drive interested, potential users to the site. These customers may subsequently convert over time.</div>
+            <div class="tab-pane fade" id="tabs-icons-text-2" role="tabpanel" aria-labelledby="tabs-icons-text-2-tab">
+              <div class="row row-grid align-items-center pb-5">
+                <div class="col-md-6 order-md-2"><img class="img-fluid rounded shadow-lg transform-perspective-right" src="assets/img/goodweb.jpg" alt="app mockup"></div>
+                <div class="col-md-6 order-md-1">
+                  <div class="pr-md-5">
+                    <h3>What makes a good website?</h3>
+                    <p>The website of a company is very important as it is often the face of the company and plays a key part int he branding, marketing and sales strategy of the company. Hence, good website principles must be followed for the success of the company.</p>
+                    <div class="mt-5" id="accordion1">
+                      <div class="card">
+                        <div class="card-header" id="headingOne">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"><b>1 </b>Don't Make Users Think</button>
+                          </h5>
+                        </div>
+                        <div class="collapse" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordion1">
+                          <div class="card-body">
+                            According to Krug’s first law of usability, the web-page should be obvious and self-explanatory. When you’re creating a site, your job is to get rid of the question marks — the decisions users need to make consciously, considering pros, cons and alternatives.
+                            If the navigation and site architecture aren’t intuitive, the number of question marks grows and makes it harder for users to comprehend how the system works and how to get from point A to point B. A clear structure, moderate visual clues and easily recognizable links can help users to find their path to their aim.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="headingTwo">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><b>2 </b>Strive For simplicity</button>
+                          </h5>
+                        </div>
+                        <div class="collapse" id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordion1">
+                          <div class="card-body">
+                            The “keep it simple”-principle (KIS) should be the primary goal of site design. Users are rarely on a site to enjoy the design; furthermore, in most cases they are looking for the information despite the design. Strive for simplicity instead of complexity.
+                            From the visitors’ point of view, the best site design is a pure text, without any advertisements or further content blocks matching exactly the query visitors used or the content they’ve been looking for. This is one of the reasons why a user-friendly print-version of web pages is essential for good user experience.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="headingThree">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><b>3 </b>Use negative space better</button>
+                          </h5>
+                        </div>
+                        <div class="collapse" id="collapseThree" aria-labelledby="headingThree" data-parent="#accordion1">
+                          <div class="card-body">Not only does it help to reduce the cognitive load for the visitors, but it makes it possible to perceive the information presented on the screen. When a new visitor approaches a design layout, the first thing he/she tries to do is to scan the page and divide the content area into digestible pieces of information.</div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="headingThree">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFopur" aria-expanded="false" aria-controls="collapseFopur"><b>4 </b>Incorporate responsive web design</button>
+                          </h5>
+                        </div>
+                        <div class="collapse" id="collapseFopur" aria-labelledby="headingThree" data-parent="#accordion1">
+                          <div class="card-body">
+                            A website with responsive web design is a site that is able to adapt the screen it is being used on, regardless of what device it is.
+                            Companies need websites that work well on a smartphone or other mobile device screens, due to the sheer amount of people who could be using the websites through smartphones or tablets. Furthermore, Google began using mobile friendliness as a ranking signal in search results so mobile-friendly sites get a boost in serach index ranking.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </p>
+              <div class="row row-grid align-items-center pb-5">
+                <div class="col-md-6 order-md-1"><img class="img-fluid rounded shadow-lg transform-perspective-left" src="assets/img/access.jpeg" alt="app mockup"></div>
+                <div class="col-md-6 order-md-2">
+                  <div class="pr-md-5">
+                    <h3>What is accessibility and what considerations you should make for it?</h3>
+                    <p>
+                      Websites should be made inclusive and as accessible as possible to people who are disabled. Websites should be developed to accomodate for assitive technologies such as screen readers that vocalise the text on each web page.
+                      If you aim for the most universally accepted technical requirements for web accessibility, the Web Content Accessibility Guidelines (WCAG) 2.0, Level AA, you can be sure you’re providing the best, most barrier-free experience possible to the disability community.
+                      These considerations include
+                      <ol>
+                        <li>Using screen reader (sr) tags</li>
+                        <li>Writing semantic HTML5</li>
+                        <li>Using Accessible Rich Internet Applications (ARIA) tags to inform assistive technologies</li>
+                        <li>Selecting smart colour coding for the visually impaired or the colour blind.</li>
+                      </ol>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="row row-grid align-items-center pb-5">
+                <div class="col-md-6 order-md-2"><img class="img-fluid rounded shadow-lg transform-perspective-right" src="assets/img/gdpr.jpeg" alt="app mockup"></div>
+                <div class="col-md-6 order-md-1">
+                  <div class="pr-md-5">
+                    <h3>What makes a good website?</h3>
+                    <p>GDPR aims to protect privacy and regulates what can be done with data collected. GDPR refers to laws which help protect the website owners from privacy and data breaches. It seeks to ensure responsibility and consent. In the context of GDPR, cookies must be considered as a form of a consent. It is necessary for everyone in a team to be GDPR aware, and an information audit should be carried out with the objective of ensuring GDPR compliancy.</p>
+                    <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#GDPRModal">View GDPR Guidelines</button>
+                    <!-- Modal-->
+                    <div class="modal fade" id="GDPRModal" tabindex="-1" role="dialog" aria-labelledby="GDPRModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="GDPRModalLabel">GDPR Guidelines</h5>
+                            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="mt-5" id="accordion2">
+                              <div class="card">
+                                <div class="card-header" id="headingOne">
+                                  <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"><b>1 </b>Cookie notifications</button>
+                                  </h5>
+                                </div>
+                                <div class="collapse" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordion2">
+                                  <div class="card-body">This makes the user aware that in order to view the website they must consent for the website to store or retrieve any information on a computer, smartphone or tablet. The user must agree with the terms and conditions and privacy policies. Implied consent is no longer allowed (you must click to opt-in). Moreover, the option must be unbundled meaning that each individual box must only have a single statement of agreement. There must be an easy way for a user to opt out and withdraw consent.</div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                  <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><b>2 </b>Cookie policy</button>
+                                  </h5>
+                                </div>
+                                <div class="collapse" id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordion2">
+                                  <div class="card-body">This should tell the users what data is being collected and for what purpose. It must also mention if any third-party members can also access their data and what their intentions are with it. This should either involve a link to the third-party policies or require the relevant information to be moved to the website itself.</div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-header" id="headingThree">
+                                  <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><b>3 </b>Privacy policy</button>
+                                  </h5>
+                                </div>
+                                <div class="collapse" id="collapseThree" aria-labelledby="headingThree" data-parent="#accordion2">
+                                  <div class="card-body">This expands on the cookie policy by stating how the data is collected and stored. The data stored must be accessible to the user and, hence, there should be a way of contacting the owner to consult on what data of theirs has been stored. Additionally, users must be able to request that their own stored data be deleted from the servers.</div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-header" id="headingThree">
+                                  <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4"><b>4 </b>Lead Captures</button>
+                                  </h5>
+                                </div>
+                                <div class="collapse" id="collapse4" aria-labelledby="headingThree" data-parent="#accordion2">
+                                  <div class="card-body">There may be no pre-ticked boxes in forms and users must consent to receiving email advertisements.</div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-header" id="headingThree">
+                                  <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5"><b>5 </b>Payments</button>
+                                  </h5>
+                                </div>
+                                <div class="collapse" id="collapse5" aria-labelledby="headingThree" data-parent="#accordion2">
+                                  <div class="card-body">It must be ensured that payment gateways for financial transactions are GDPR compliant and their privacy policy should be accessible from the website. In addition, if the website is required to store the data before passing it onto the gateways then it must be removed after a reasonable period of time as this is personal information.</div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-header" id="headingThree">
+                                  <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6"><b>6 </b>Payments</button>
+                                  </h5>
+                                </div>
+                                <div class="collapse" id="collapse6" aria-labelledby="headingThree" data-parent="#accordion2">
+                                  <div class="card-body">This is where third-party marketing automation software solutions are used in the website. One must ensure that these parties are also GDPR approved and do not store and use data in ways which have not been consented to. Users must be able to access this information in the privacy policy.</div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-header" id="headingThree">
+                                  <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7"><b>7 </b>International Data Supervisory</button>
+                                  </h5>
+                                </div>
+                                <div class="collapse" id="collapse7" aria-labelledby="headingThree" data-parent="#accordion2">
+                                  <div class="card-body">If the product is traded internationally it will be necessary to determine the lead data protection supervisory authority.</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button class="btn btn-danger" type="button" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row row-grid align-items-center pb-5">
+                <div class="col-md-6 order-md-1"><img class="img-fluid rounded shadow-lg transform-perspective-left" src="assets/img/marketing.jpeg" alt="app mockup"></div>
+                <div class="col-md-6 order-md-2">
+                  <div class="pr-md-5">
+                    <h3>What marketing steps would you take to drive people to look at your website?</h3>
+                    <p>A number of marketing strategies can be employed to drive traffic towards the website and make the product popular. I
+                      <div class="mt-5" id="accordion4">
+                        <div class="card">
+                          <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"><b>1 </b>Influencer Marketing</button>
+                            </h5>
+                          </div>
+                          <div class="collapse" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordion4">
+                            <div class="card-body">Bloggers and social media influencers can be reached out to with an already large audience base to promote the product and include a link to the website on their personal blogs/vlogs.</div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><b>2 </b>Offline to Online Marketing</button>
+                            </h5>
+                          </div>
+                          <div class="collapse" id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordion4">
+                            <div class="card-body">Since our product is aimed at people with back problems, posters including a QR code directing to the website can be put up in places such as hospital boards. </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><b>3 </b>Search Engine Optimisation</button>
+                            </h5>
+                          </div>
+                          <div class="collapse" id="collapseThree" aria-labelledby="headingThree" data-parent="#accordion4">
+                            <div class="card-body">Search Engine Optimisation strategies can be used, such as content optimization and creating backlinks from other websites, to make our website appear higher up on Google and other searches.</div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><b>4 </b>Social Media Marketing</button>
+                            </h5>
+                          </div>
+                          <div class="collapse" id="collapseFour" aria-labelledby="headingThree" data-parent="#accordion4">
+                            <div class="card-body">Social media should be used as well to market and promote the product, including establishing a Twitter and Facebook page.</div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive"><b>5 </b>Content Marketing (Drip Marketing)</button>
+                            </h5>
+                          </div>
+                          <div class="collapse" id="collapseFive" aria-labelledby="headingThree" data-parent="#accordion4">
+                            <div class="card-body">Creating useful content in the form of newsletters, blog posts and podcasts can help drive interested, potential users to the site. These customers may subsequently convert over time.</div>
+                          </div>
+                        </div>
+                      </div>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
